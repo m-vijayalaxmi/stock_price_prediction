@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Stock Price Predictor</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+ <body>
+ <form action="/predict" method="post">
+    <h1>Stock Price Predictor</h1>
+ <label for="open">Open Price:</label>
+<input type="text" name="open" id="open" required><br>
+
+ <label for="high">High Price:</label>
+ <input type="text" name="high" id="high" required><br>
+
+ <label for="low">Low Price:</label>
+ <input type="text" name="low" id="low" required><br>
+
+ <label for="volume">Volume:</label>
+ <input type="text" name="volume" id="volume" required><br>
+
+ <input type="submit" value="Predict">
+ </form>
+</body>
+</html>
